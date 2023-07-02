@@ -1,0 +1,48 @@
+//@base_url=http://localhost:8080
+
+
+###
+POST localhost:8080/rest/phone
+Content-Type: application/json
+
+{
+    "name": "Jean",
+    "number": "0641526313"
+}
+
+###
+GET localhost:8080/rest/phone
+
+
+###
+DELETE localhost:8080/rest/phone/101
+
+###
+PUT localhost:8080/rest/phone/101
+Content-Type: application/json
+
+{
+  "name": "Louis2",
+  "number": "0000000000"
+}
+
+//
+
+###
+POST localhost:8080/rest/client
+Authorization : NUEk0cH-Tg-o2944pTERU5pWEsU7Ddc5
+Content-Type: application/json
+
+{
+    "username": "Louis",
+    "password": "pass"
+}
+
+###
+DELETE localhost:8080/rest/client/
+
+###
+GET localhost:8080/rest/client
+
+###
+POST localhost:8080/rest/login/login
